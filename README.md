@@ -27,7 +27,7 @@ To publish free on **GitHub Pages**: repo → Settings → Pages → Deploy from
 | About / statement / gallery | Parallax images, rotating badge, word-by-word scroll reveal, clip-path bento gallery |
 | Reviews | Drag / swipe slider with progress bar |
 | Booking | Validated form, date + time slots that respect opening hours, sends the booking via WhatsApp |
-| FAQ, CTA, contact, footer | Smooth accordion, live **Open now / Closed** status, animated map card, giant wordmark |
+| FAQ, CTA, contact, footer | Smooth accordion, live **Open now / Closed** status (contact + footer), animated map card, giant wordmark |
 
 Also: Lenis smooth scrolling, custom cursor and magnetic buttons on desktop, scroll progress bar, back-to-top ring, WhatsApp button, film grain, SEO + `TireShop` structured data, keyboard and screen-reader support, and full fallbacks — with "reduce motion" on or scripts blocked, everything is still visible and usable.
 
@@ -36,12 +36,11 @@ Also: Lenis smooth scrolling, custom cursor and magnetic buttons on desktop, scr
 Everything below is sample content:
 
 1. **Business settings** — top of `assets/js/main.js` (`CONFIG`): WhatsApp number (digits only, with country code), currency symbol, opening hours, and optional `timeZone`.
-2. **Contact details** — phone `071 895 6445` and the Mitchell's Plain address are set. Still a placeholder: email `hello@zamazamatyres.com` in `index.html`.
+2. **Contact details** — phone `071 895 6445` and the Mitchell's Plain address are set (no email by choice).
 3. **Opening hours list** in the booking section (keep it in sync with `CONFIG.hours`).
 4. **Tyres & prices** — each `<article class="product">` in the shop: brand, model, `data-price`, `data-sizes`, ratings and spec bars.
 5. **Stats, reviews and the "4.9 from 1,200+ reviews" score** — replace with your real numbers and genuine customer reviews.
 6. **Social links** in the footer (currently `#`).
-7. **Newsletter** — opens an email draft; connect a service such as Mailchimp or Formspree to collect sign-ups properly.
 
 ## Images
 

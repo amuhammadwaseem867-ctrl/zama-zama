@@ -1100,19 +1100,6 @@
     });
   }
 
-  /* ---------- Newsletter: opens an email draft (connect a mailing service to collect sign-ups) ---------- */
-  const news = $('.newsletter');
-  news && news.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const input = $('input', news);
-    if (!input.checkValidity() || !input.value) { input.focus(); toast('Please enter a valid email address'); return; }
-    const mail = $('a[href^="mailto:"]');
-    const to = mail ? mail.getAttribute('href').replace('mailto:', '') : '';
-    window.location.href = `mailto:${to}?subject=${encodeURIComponent('Seasonal offers sign-up')}&body=${encodeURIComponent(`Please add ${input.value} to your offers list.`)}`;
-    news.classList.add('is-done');
-    toast('Opening your email app to confirm sign-up');
-  });
-
   /* ---------- WhatsApp links ---------- */
   $$('[data-whatsapp]').forEach((a) => { a.href = waLink(`Hi ${CONFIG.businessName}! I have a question about tyres.`); });
 
