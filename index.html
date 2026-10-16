@@ -1,0 +1,1269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Zama Zama Tyres — Premium Tyres, Wheels &amp; Alignment</title>
+  <meta name="description" content="Zama Zama Tyres: premium tyres from the world's leading brands, 3D wheel alignment, balancing, puncture repair and alloy wheel refurbishment, fitted by certified technicians.">
+  <meta name="theme-color" content="#08080a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zama Zama Tyres — Grip the road. Own the drive.">
+  <meta property="og:description" content="Premium tyres, 3D wheel alignment and wheel care, fitted by certified technicians.">
+  <meta property="og:image" content="https://unsplash.com/photos/i34LTsTiUKE/download?force=true&amp;w=1200">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unsplash.com">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Unbounded:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    /* Runs before any image is parsed: progressive enhancement flag,
+       image fade-in and a fallback chain for remote images. */
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      // Image load events stop at document (they never reach window), so listen there.
+      document.addEventListener('load', function (e) {
+        var t = e.target;
+        if (t && t.tagName === 'IMG') t.classList.add('is-loaded');
+      }, true);
+      document.addEventListener('error', function (e) {
+        var img = e.target;
+        if (!img || img.tagName !== 'IMG') return;
+        var next = img.getAttribute('data-fallback');
+        if (next) { img.removeAttribute('data-fallback'); img.src = next; return; }
+        img.classList.add('is-broken');
+        var media = img.closest('.media');
+        if (media) media.classList.add('is-broken');
+      }, true);
+      // Safety net: if scripts fail, never leave content hidden.
+      setTimeout(function () { if (!root.classList.contains('is-ready')) root.classList.add('no-anim'); }, 6000);
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TireShop",
+    "name": "Zama Zama Tyres",
+    "description": "Premium tyres, wheel alignment, balancing and alloy wheel care.",
+    "telephone": "+1-555-012-3456",
+    "email": "hello@zamazamatyres.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot 24, Motorway Service Road",
+      "addressLocality": "Industrial Area"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ============ ICON SPRITE ============ -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ff4d1c"/>
+        <stop offset="1" stop-color="#ffb21e"/>
+      </linearGradient>
+    </defs>
+    <symbol id="logo-mark" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="20" fill="none" stroke="url(#brandGrad)" stroke-width="5.5" stroke-dasharray="4 1.25"/>
+      <circle cx="24" cy="24" r="12.5" fill="none" stroke="currentColor" stroke-opacity=".3" stroke-width="1.4"/>
+      <path d="M17.5 17.5h13l-13 13h13" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.8 1.2 6.9-6.2-3.2L5.8 21 7 14.1 2 9.3l6.9-1z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M9 12h6M9 16h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.2 13.9 7 22l5-3 5 3-1.2-8.1"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4zM6 2v2M10 2v2M14 2v2"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9M19 18h2a1 1 0 0 0 1-1v-3.6a1 1 0 0 0-.2-.6l-3.5-4.4a1 1 0 0 0-.8-.4H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2M9 17h6"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-tyre" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2.5c.6 4.6 2.9 6.9 7.5 7.5-4.6.6-6.9 2.9-7.5 7.5-.6-4.6-2.9-6.9-7.5-7.5 4.6-.6 6.9-2.9 7.5-7.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-quote-mark" viewBox="0 0 24 24"><path d="M10 7H6a3 3 0 0 0-3 3v4h5v-4H5.5A1.5 1.5 0 0 1 7 8.5h3zm11 0h-4a3 3 0 0 0-3 3v4h5v-4h-2.5A1.5 1.5 0 0 1 18 8.5h3z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.27-.2-.57-.34m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4zM17.5 6.5h0"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24 24 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.6 49.6 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24 24 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.6 49.6 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M16 3c.3 2.4 1.9 4.2 4 4.5v3.2c-1.5 0-2.9-.4-4-1.2v6.3A5.8 5.8 0 1 1 10.2 10v3.3a2.6 2.6 0 1 0 2.6 2.6V3z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <svg class="preloader__mark"><use href="#logo-mark"/></svg>
+      <div class="preloader__word">
+        <span>Z</span><span>A</span><span>M</span><span>A</span><span class="gap"></span><span>Z</span><span>A</span><span>M</span><span>A</span>
+      </div>
+      <div class="preloader__bar"><i></i></div>
+      <div class="preloader__count"><span class="preloader__num">0</span>%</div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><i></i></div>
+  <div class="cursor is-hidden" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label"></span></div><div class="cursor__dot"></div></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="Zama Zama Tyres — home">
+        <svg class="logo__mark"><use href="#logo-mark"/></svg>
+        <span class="logo__text"><strong>Zama Zama</strong><small>Tyres &amp; Wheels</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#shop">Tyres</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn quote-toggle" type="button" aria-label="Open your quote" aria-controls="quoteDrawer" aria-expanded="false">
+          <svg class="ic"><use href="#i-quote"/></svg>
+          <span class="quote-count" aria-live="polite">0</span>
+        </button>
+        <a class="btn btn--primary btn--sm header__cta" href="#booking" data-magnetic>
+          <span class="btn__label" data-text="Book now"><span>Book now</span></span>
+        </a>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+          <span class="menu-toggle__lines"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__bg"></div>
+    <nav class="container mobile-menu__inner" aria-label="Mobile">
+      <ul class="mobile-menu__links">
+        <li style="--i:0"><a href="#services"><span>01</span>Services</a></li>
+        <li style="--i:1"><a href="#shop"><span>02</span>Tyres</a></li>
+        <li style="--i:2"><a href="#process"><span>03</span>How it works</a></li>
+        <li style="--i:3"><a href="#about"><span>04</span>About</a></li>
+        <li style="--i:4"><a href="#reviews"><span>05</span>Reviews</a></li>
+        <li style="--i:5"><a href="#contact"><span>06</span>Contact</a></li>
+      </ul>
+      <div class="mobile-menu__foot" style="--i:6">
+        <a class="btn btn--primary" href="#booking"><span class="btn__label" data-text="Book a fitting"><span>Book a fitting</span></span><span class="btn__icon"><svg class="ic"><use href="#i-arrow"/></svg></span></a>
+        <a class="mobile-menu__phone" href="tel:+15550123456"><svg class="ic"><use href="#i-phone"/></svg>+1 (555) 012-3456</a>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__media media" data-hero="media">
+        <img src="https://unsplash.com/photos/i34LTsTiUKE/download?force=true&amp;w=2000"
+             data-fallback="https://unsplash.com/photos/Y1wL87Fc4D4/download?force=true&amp;w=2000"
+             alt="Glossy black sports car parked at night with reflections on the wet ground"
+             fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow" data-hero="fade"><span class="eyebrow__dot"></span>Premium tyres · Expert fitting · Since 2010</p>
+          <h1 class="hero__title" data-hero="title">
+            <span class="hero__line"><span class="hero__line-inner">Grip the road.</span></span>
+            <span class="hero__line"><span class="hero__line-inner text-grad">Own the drive.</span></span>
+          </h1>
+          <p class="hero__lead" data-hero="fade">The world's leading tyre brands, laser-precise 3D wheel alignment and showroom-grade wheel care — all under one roof, fitted by certified technicians while you relax in our lounge.</p>
+          <div class="hero__ctas" data-hero="fade">
+            <a class="btn btn--primary btn--lg" href="#finder" data-magnetic>
+              <span class="btn__label" data-text="Find my tyres"><span>Find my tyres</span></span>
+              <span class="btn__icon"><svg class="ic"><use href="#i-search"/></svg></span>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#booking" data-magnetic>
+              <span class="btn__label" data-text="Book a fitting"><span>Book a fitting</span></span>
+              <span class="btn__icon"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </a>
+          </div>
+          <ul class="hero__stats" data-hero="stats">
+            <li><strong><span data-count="15">15</span>+</strong><span>Years on the road</span></li>
+            <li><strong><span data-count="48">48</span>K+</strong><span>Tyres fitted</span></li>
+            <li><strong><span data-count="4.9" data-decimals="1">4.9</span><svg class="star"><use href="#i-star"/></svg></strong><span>Customer rating</span></li>
+            <li><strong><span data-count="30">30</span><small>min</small></strong><span>Average fitting</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" data-hero="tyre">
+          <div class="tyre-stage">
+            <div class="tyre-stage__ring"></div>
+            <svg class="tyre" id="heroTyre" viewBox="-300 -300 600 600" role="img" aria-label="Illustration of a performance tyre and alloy wheel"></svg>
+            <div class="tyre-badge tyre-badge--a" data-hero="badge">
+              <span class="tyre-badge__icon"><svg class="ic"><use href="#i-sparkle"/></svg></span>
+              <span><strong>Free fitting</strong><small>&amp; balancing on every set of 4</small></span>
+            </div>
+            <div class="tyre-badge tyre-badge--b" data-hero="badge">
+              <span class="tyre-badge__icon tyre-badge__icon--live"><i></i></span>
+              <span><strong>Same-day fitting</strong><small>Walk-ins welcome</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#bands" aria-label="Scroll to content" data-hero="cue">
+        <span class="scroll-cue__wheel"><i></i></span>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ CROSSING BANDS ============ -->
+    <section class="bands" id="bands" aria-label="Services and brands">
+      <div class="band band--accent">
+        <div class="band__track">
+          <div class="band__group">
+            <span>Tyre fitting</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>3D wheel alignment</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>Balancing</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>Puncture repair</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>Alloy refurbishment</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>4x4 setups</span><svg class="ic"><use href="#i-sparkle"/></svg>
+          </div>
+          <div class="band__group" aria-hidden="true">
+            <span>Tyre fitting</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>3D wheel alignment</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>Balancing</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>Puncture repair</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>Alloy refurbishment</span><svg class="ic"><use href="#i-sparkle"/></svg>
+            <span>4x4 setups</span><svg class="ic"><use href="#i-sparkle"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="band band--dark">
+        <p class="sr-only">Brands we stock: Michelin, Pirelli, Bridgestone, Continental, Goodyear, Dunlop, Yokohama, Hankook, BFGoodrich, Falken and Toyo.</p>
+        <div class="band__track band__track--reverse" aria-hidden="true">
+          <div class="band__group">
+            <span>Michelin</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Pirelli</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Bridgestone</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Continental</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Goodyear</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Dunlop</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Yokohama</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Hankook</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>BFGoodrich</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Falken</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Toyo</span><svg class="ic"><use href="#i-tyre"/></svg>
+          </div>
+          <div class="band__group">
+            <span>Michelin</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Pirelli</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Bridgestone</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Continental</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Goodyear</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Dunlop</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Yokohama</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Hankook</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>BFGoodrich</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span class="is-outline">Falken</span><svg class="ic"><use href="#i-tyre"/></svg>
+            <span>Toyo</span><svg class="ic"><use href="#i-tyre"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TYRE FINDER ============ -->
+    <section class="section finder" id="finder">
+      <div class="container finder__grid">
+        <div class="finder__intro">
+          <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Tyre finder</p>
+          <h2 class="section-title" data-split>Find the perfect fit in <span class="text-grad">seconds.</span></h2>
+          <p class="section-lead" data-reveal>Your size is printed on the tyre sidewall and looks like <strong>225/45 R17</strong>. Pick it below — or choose your vehicle type — and we'll show you what's in stock.</p>
+
+          <div class="size-readout" data-reveal aria-live="polite">
+            <div class="size-readout__code">
+              <span class="seg" data-seg="width">225</span><span class="sep">/</span><span class="seg" data-seg="profile">45</span><span class="sep">&nbsp;R</span><span class="seg" data-seg="rim">17</span>
+            </div>
+            <ul class="size-readout__legend">
+              <li><b data-legend="width">225</b><span>Width in mm</span></li>
+              <li><b data-legend="profile">45</b><span>Profile — sidewall height as % of width</span></li>
+              <li><b data-legend="rim">17"</b><span>Rim diameter in inches</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="finder__panel glass" data-reveal>
+          <div class="finder__visual" aria-hidden="true">
+            <svg class="tyre tyre--mini" id="finderTyre" viewBox="-300 -300 600 600"></svg>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Search tyres">
+            <button class="tabs__btn is-active" role="tab" id="tab-size" aria-selected="true" aria-controls="panel-size" type="button">By size</button>
+            <button class="tabs__btn" role="tab" id="tab-vehicle" aria-selected="false" aria-controls="panel-vehicle" type="button" tabindex="-1">By vehicle</button>
+            <span class="tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <form class="finder__form" id="finderForm" novalidate>
+            <div class="tabs__panel" id="panel-size" role="tabpanel" aria-labelledby="tab-size">
+              <div class="field-row field-row--3">
+                <label class="select-field">
+                  <span>Width</span>
+                  <select name="width" data-size="width"></select>
+                  <svg class="ic"><use href="#i-chevron-down"/></svg>
+                </label>
+                <label class="select-field">
+                  <span>Profile</span>
+                  <select name="profile" data-size="profile"></select>
+                  <svg class="ic"><use href="#i-chevron-down"/></svg>
+                </label>
+                <label class="select-field">
+                  <span>Rim</span>
+                  <select name="rim" data-size="rim"></select>
+                  <svg class="ic"><use href="#i-chevron-down"/></svg>
+                </label>
+              </div>
+            </div>
+
+            <div class="tabs__panel" id="panel-vehicle" role="tabpanel" aria-labelledby="tab-vehicle" hidden>
+              <fieldset class="vehicle-picker">
+                <legend class="sr-only">Vehicle type</legend>
+                <label><input type="radio" name="vehicle" value="hatch" data-size-preset="195/65 R15"><span><svg class="ic"><use href="#i-car"/></svg>Hatchback</span></label>
+                <label><input type="radio" name="vehicle" value="sedan" data-size-preset="205/55 R16" checked><span><svg class="ic"><use href="#i-car"/></svg>Sedan</span></label>
+                <label><input type="radio" name="vehicle" value="suv" data-size-preset="235/65 R17" data-cat-preset="suv"><span><svg class="ic"><use href="#i-car"/></svg>SUV</span></label>
+                <label><input type="radio" name="vehicle" value="4x4" data-size-preset="265/70 R16" data-cat-preset="suv"><span><svg class="ic"><use href="#i-truck"/></svg>4x4 / Pickup</span></label>
+                <label><input type="radio" name="vehicle" value="sport" data-size-preset="225/40 R18" data-cat-preset="performance"><span><svg class="ic"><use href="#i-gauge"/></svg>Sports car</span></label>
+              </fieldset>
+            </div>
+
+            <label class="select-field">
+              <span>Driving style</span>
+              <select name="season" id="finderSeason">
+                <option value="all">Any — show everything</option>
+                <option value="performance">Performance &amp; sporty</option>
+                <option value="touring">Comfort &amp; touring</option>
+                <option value="all-season">All-season, all-weather</option>
+                <option value="suv">SUV, 4x4 &amp; off-road</option>
+              </select>
+              <svg class="ic"><use href="#i-chevron-down"/></svg>
+            </label>
+
+            <button class="btn btn--primary btn--block btn--lg" type="submit">
+              <span class="btn__label" data-text="Show matching tyres"><span>Show matching tyres</span></span>
+              <span class="btn__icon"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </button>
+            <p class="finder__hint"><svg class="ic"><use href="#i-check"/></svg>Can't find your size? We source any tyre within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Services</p>
+            <h2 class="section-title" data-split>Complete tyre &amp; wheel care, <span class="text-grad">under one roof.</span></h2>
+          </div>
+          <p class="section-lead" data-reveal>From a quick puncture fix to a full performance set-up, every job is done on modern equipment by technicians who treat your car like their own.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card" data-reveal>
+            <div class="service-card__media media">
+              <img src="https://unsplash.com/photos/9uHal2Dd9aE/download?force=true&amp;w=900" data-fallback="https://unsplash.com/photos/PHJcbJf3YTY/download?force=true&amp;w=900" alt="Technician in work gloves fitting a tyre in the workshop" loading="lazy" decoding="async">
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__top"><span class="service-card__num">01</span><span class="pill">Free with any set of 4</span></div>
+              <h3>Tyre supply &amp; fitting</h3>
+              <p>New tyres from every major brand, fitted with fresh valves on touchless machines that protect your alloys.</p>
+              <a class="link-arrow" href="#booking" data-service="Tyre supply & fitting">Book this service<svg class="ic"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__media media">
+              <img src="https://unsplash.com/photos/dYlVT5Ktj6U/download?force=true&amp;w=900" data-fallback="https://unsplash.com/photos/hL9Sx51w7jc/download?force=true&amp;w=900" alt="Close-up of a car tyre and wheel ready for alignment" loading="lazy" decoding="async">
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__top"><span class="service-card__num">02</span><span class="pill">From $49</span></div>
+              <h3>3D wheel alignment</h3>
+              <p>Camera-based alignment measured to a hundredth of a degree. Stops uneven wear, fixes pulling and straightens your steering wheel.</p>
+              <a class="link-arrow" href="#booking" data-service="3D wheel alignment">Book this service<svg class="ic"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__media media">
+              <img src="https://unsplash.com/photos/FmOdtM4KXhk/download?force=true&amp;w=900" data-fallback="https://unsplash.com/photos/bO7SFq7Hknc/download?force=true&amp;w=900" alt="Black and grey alloy wheel with tyre" loading="lazy" decoding="async">
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__top"><span class="service-card__num">03</span><span class="pill">From $10 / wheel</span></div>
+              <h3>Computerised balancing</h3>
+              <p>High-speed dynamic balancing removes steering wobble and vibration for a smooth, quiet ride at any speed.</p>
+              <a class="link-arrow" href="#booking" data-service="Wheel balancing">Book this service<svg class="ic"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__media media">
+              <img src="https://unsplash.com/photos/rRaApBvfSkA/download?force=true&amp;w=900" data-fallback="https://unsplash.com/photos/Q8N9KD1g-Xo/download?force=true&amp;w=900" alt="Orange traffic cone beside a stack of vehicle tyres" loading="lazy" decoding="async">
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__top"><span class="service-card__num">04</span><span class="pill">From $15</span></div>
+              <h3>Puncture repair</h3>
+              <p>Professional plug-and-patch repairs from the inside out — safe, permanent and usually done in under 20 minutes.</p>
+              <a class="link-arrow" href="#booking" data-service="Puncture repair">Book this service<svg class="ic"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__media media">
+              <img src="https://unsplash.com/photos/vmZuHxfbIlw/download?force=true&amp;w=900" data-fallback="https://unsplash.com/photos/lUzZ_0B4Gzs/download?force=true&amp;w=900" alt="Black alloy wheel with a gold brake caliper" loading="lazy" decoding="async">
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__top"><span class="service-card__num">05</span><span class="pill">From $89 / wheel</span></div>
+              <h3>Alloy wheel refurbishment</h3>
+              <p>Kerb rash, corrosion and chips removed. Diamond-cut, powder-coat or custom colours, finished to factory standard.</p>
+              <a class="link-arrow" href="#booking" data-service="Alloy wheel refurbishment">Book this service<svg class="ic"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <div class="service-card__media media">
+              <img src="https://unsplash.com/photos/Km36esq8rY4/download?force=true&amp;w=900" data-fallback="https://unsplash.com/photos/nOs-lK_ebe8/download?force=true&amp;w=900" alt="Mud-covered off-road vehicle with rugged all-terrain tyres" loading="lazy" decoding="async">
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__top"><span class="service-card__num">06</span><span class="pill">Custom quote</span></div>
+              <h3>4x4 &amp; off-road setups</h3>
+              <p>All-terrain and mud-terrain packages, lift-ready sizes and heavy-duty balancing for SUVs and pickups.</p>
+              <a class="link-arrow" href="#booking" data-service="4x4 & off-road setup">Book this service<svg class="ic"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+
+        <ul class="extras" data-reveal>
+          <li><svg class="ic"><use href="#i-check"/></svg>Nitrogen inflation</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>TPMS sensor service</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Wheel locks &amp; valves</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Seasonal tyre storage</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Mobile fitting at your door</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Free tyre health check</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS (horizontal) ============ -->
+    <section class="process" id="process">
+      <div class="process__pin">
+        <div class="container process__head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>How it works</p>
+            <h2 class="section-title" data-split>From click to tarmac in <span class="text-grad">four steps.</span></h2>
+          </div>
+          <div class="process__progress" aria-hidden="true"><i></i></div>
+        </div>
+
+        <div class="process__viewport">
+          <ol class="process__track">
+            <li class="step">
+              <div class="step__text">
+                <span class="step__num">01</span>
+                <h3>Choose</h3>
+                <p>Use the tyre finder or talk to an expert. We'll recommend options for your car, driving style and budget — never an upsell.</p>
+              </div>
+              <div class="step__media media">
+                <img src="https://unsplash.com/photos/CTwQiFlpgrM/download?force=true&amp;w=1400" data-fallback="https://unsplash.com/photos/FmOdtM4KXhk/download?force=true&amp;w=1400" alt="Dramatic close-up of a rugged tyre tread" loading="lazy" decoding="async">
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__text">
+                <span class="step__num">02</span>
+                <h3>Book</h3>
+                <p>Pick a time online or on WhatsApp. We confirm instantly and have your tyres ready and waiting before you arrive.</p>
+              </div>
+              <div class="step__media media">
+                <img src="https://unsplash.com/photos/-PNudk9hxlE/download?force=true&amp;w=1400" data-fallback="https://unsplash.com/photos/CsIcSVQlQmA/download?force=true&amp;w=1400" alt="Black sports car in dramatic lighting" loading="lazy" decoding="async">
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__text">
+                <span class="step__num">03</span>
+                <h3>Fit</h3>
+                <p>Our technicians fit, balance and check your alignment while you relax in the lounge with free Wi-Fi and fresh coffee.</p>
+              </div>
+              <div class="step__media media">
+                <img src="https://unsplash.com/photos/PHJcbJf3YTY/download?force=true&amp;w=1400" data-fallback="https://unsplash.com/photos/9uHal2Dd9aE/download?force=true&amp;w=1400" alt="Mechanic standing beside a stack of tyres in the workshop" loading="lazy" decoding="async">
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__text">
+                <span class="step__num">04</span>
+                <h3>Drive</h3>
+                <p>Leave with a digital safety report, a warranty on parts and labour, and the confidence of perfect grip.</p>
+              </div>
+              <div class="step__media media">
+                <img src="https://unsplash.com/photos/Y1wL87Fc4D4/download?force=true&amp;w=1400" data-fallback="https://unsplash.com/photos/HWZ7Psp0nCQ/download?force=true&amp;w=1400" alt="Dark sports car driving down a city street at night" loading="lazy" decoding="async">
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHOP ============ -->
+    <section class="section shop" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Featured tyres</p>
+            <h2 class="section-title" data-split>Hand-picked tyres for <span class="text-grad">every drive.</span></h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter tyres" data-reveal>
+            <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-filter="performance" aria-pressed="false">Performance</button>
+            <button class="chip" type="button" data-filter="touring" aria-pressed="false">Touring</button>
+            <button class="chip" type="button" data-filter="suv" aria-pressed="false">SUV &amp; 4x4</button>
+            <button class="chip" type="button" data-filter="all-season" aria-pressed="false">All-season</button>
+          </div>
+        </div>
+
+        <div class="shop__notice" hidden>
+          <svg class="ic"><use href="#i-search"/></svg>
+          <span class="shop__notice-text"></span>
+          <button class="shop__notice-clear" type="button">Clear search<svg class="ic"><use href="#i-close"/></svg></button>
+        </div>
+
+        <div class="products">
+          <article class="product" data-id="pzero" data-cat="performance" data-brand="Pirelli" data-name="P Zero" data-price="189" data-sizes="225/45 R17,225/40 R18,245/40 R18,255/35 R19">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/FF2IFGz2lOM/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/-OsnPr51mgo/download?force=true&amp;w=800" alt="Black performance wheel with red brake caliper" loading="lazy" decoding="async">
+              <span class="product__tag">Bestseller</span>
+            </div>
+            <div class="product__body">
+              <p class="product__brand">Pirelli <span>Performance</span></p>
+              <h3 class="product__name">P Zero</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.9"></span><b>4.9</b><span>(212)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:96%"></i></li>
+                <li><span>Wet</span><i style="--v:88%"></i></li>
+                <li><span>Comfort</span><i style="--v:72%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$189</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+
+          <article class="product" data-id="ps5" data-cat="performance" data-brand="Michelin" data-name="Pilot Sport 5" data-price="199" data-sizes="205/55 R16,225/45 R17,225/40 R18,245/40 R18">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/Wr1vbV1i-Qc/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/ISfRSbfqHBA/download?force=true&amp;w=800" alt="Dark alloy wheel with a yellow brake caliper" loading="lazy" decoding="async">
+              <span class="product__tag product__tag--new">New</span>
+            </div>
+            <div class="product__body">
+              <p class="product__brand">Michelin <span>Performance</span></p>
+              <h3 class="product__name">Pilot Sport 5</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.9"></span><b>4.9</b><span>(348)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:94%"></i></li>
+                <li><span>Wet</span><i style="--v:92%"></i></li>
+                <li><span>Comfort</span><i style="--v:80%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$199</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+
+          <article class="product" data-id="pc7" data-cat="touring" data-brand="Continental" data-name="PremiumContact 7" data-price="149" data-sizes="195/65 R15,205/55 R16,225/45 R17,225/50 R17">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/-OsnPr51mgo/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/dYlVT5Ktj6U/download?force=true&amp;w=800" alt="Close-up of a shiny black car wheel and tyre" loading="lazy" decoding="async">
+            </div>
+            <div class="product__body">
+              <p class="product__brand">Continental <span>Touring</span></p>
+              <h3 class="product__name">PremiumContact 7</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.8"></span><b>4.8</b><span>(176)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:86%"></i></li>
+                <li><span>Wet</span><i style="--v:94%"></i></li>
+                <li><span>Comfort</span><i style="--v:90%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$149</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+
+          <article class="product" data-id="t6" data-cat="touring" data-brand="Bridgestone" data-name="Turanza 6" data-price="139" data-sizes="195/65 R15,205/55 R16,215/55 R17,225/45 R17">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/bO7SFq7Hknc/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/hL9Sx51w7jc/download?force=true&amp;w=800" alt="Close-up of a tyre on a sports car" loading="lazy" decoding="async">
+              <span class="product__tag">Quiet ride</span>
+            </div>
+            <div class="product__body">
+              <p class="product__brand">Bridgestone <span>Touring</span></p>
+              <h3 class="product__name">Turanza 6</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.7"></span><b>4.7</b><span>(154)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:82%"></i></li>
+                <li><span>Wet</span><i style="--v:90%"></i></li>
+                <li><span>Comfort</span><i style="--v:93%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$139</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+
+          <article class="product" data-id="g015" data-cat="suv" data-brand="Yokohama" data-name="Geolandar A/T G015" data-price="169" data-sizes="235/65 R17,265/65 R17,265/70 R16,265/60 R18">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/nOs-lK_ebe8/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/Km36esq8rY4/download?force=true&amp;w=800" alt="Wet knobby off-road tyres on a 4x4 over rocks" loading="lazy" decoding="async">
+            </div>
+            <div class="product__body">
+              <p class="product__brand">Yokohama <span>SUV &amp; 4x4</span></p>
+              <h3 class="product__name">Geolandar A/T G015</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.8"></span><b>4.8</b><span>(129)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:84%"></i></li>
+                <li><span>Off-road</span><i style="--v:86%"></i></li>
+                <li><span>Comfort</span><i style="--v:78%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$169</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+
+          <article class="product" data-id="ko2" data-cat="suv" data-brand="BFGoodrich" data-name="All-Terrain T/A KO2" data-price="219" data-sizes="245/70 R16,265/70 R16,265/65 R17,285/70 R17">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/BO5a3NB8vs8/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/-PCCVqFedNg/download?force=true&amp;w=800" alt="Off-road vehicle splashing through thick mud in the jungle" loading="lazy" decoding="async">
+              <span class="product__tag">Off-road king</span>
+            </div>
+            <div class="product__body">
+              <p class="product__brand">BFGoodrich <span>SUV &amp; 4x4</span></p>
+              <h3 class="product__name">All-Terrain T/A KO2</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.9"></span><b>4.9</b><span>(403)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:88%"></i></li>
+                <li><span>Off-road</span><i style="--v:97%"></i></li>
+                <li><span>Comfort</span><i style="--v:70%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$219</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+
+          <article class="product" data-id="v4s" data-cat="all-season" data-brand="Goodyear" data-name="Vector 4Seasons Gen-3" data-price="129" data-sizes="195/65 R15,205/55 R16,215/60 R17,225/45 R17">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/ZNOLp1MFGKY/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/zymgygh4qaY/download?force=true&amp;w=800" alt="Red car driving down a wet road" loading="lazy" decoding="async">
+            </div>
+            <div class="product__body">
+              <p class="product__brand">Goodyear <span>All-season</span></p>
+              <h3 class="product__name">Vector 4Seasons Gen-3</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.7"></span><b>4.7</b><span>(187)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:80%"></i></li>
+                <li><span>Wet</span><i style="--v:90%"></i></li>
+                <li><span>Comfort</span><i style="--v:86%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$129</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+
+          <article class="product" data-id="k4s2" data-cat="all-season" data-brand="Hankook" data-name="Kinergy 4S2" data-price="109" data-sizes="185/65 R15,195/65 R15,205/55 R16,225/45 R17">
+            <div class="product__media media" data-cursor="Add">
+              <img src="https://unsplash.com/photos/kqhF9kF6J0A/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/yuMDLCDADs0/download?force=true&amp;w=800" alt="Black and white photo of a car wheel in the snow" loading="lazy" decoding="async">
+              <span class="product__tag product__tag--value">Best value</span>
+            </div>
+            <div class="product__body">
+              <p class="product__brand">Hankook <span>All-season</span></p>
+              <h3 class="product__name">Kinergy 4S2</h3>
+              <div class="rating"><span class="rating__stars" style="--r:4.6"></span><b>4.6</b><span>(98)</span></div>
+              <ul class="specs">
+                <li><span>Grip</span><i style="--v:78%"></i></li>
+                <li><span>Wet</span><i style="--v:86%"></i></li>
+                <li><span>Comfort</span><i style="--v:84%"></i></li>
+              </ul>
+              <div class="product__foot">
+                <label class="mini-select"><span class="sr-only">Size</span><select class="product__size"></select><svg class="ic"><use href="#i-chevron-down"/></svg></label>
+                <div class="product__price"><strong>$109</strong><small>/ tyre</small></div>
+              </div>
+              <button class="btn btn--outline btn--block add-to-quote" type="button"><span class="btn__label" data-text="Add to quote"><span>Add to quote</span></span><span class="btn__icon"><svg class="ic"><use href="#i-plus"/></svg></span></button>
+            </div>
+          </article>
+        </div>
+
+        <p class="shop__empty" hidden>No tyres in this category match your size yet — <a href="#booking">request a quote</a> and we'll source it within 24 hours.</p>
+        <p class="shop__note" data-reveal><svg class="ic"><use href="#i-tag"/></svg>Prices are per tyre and include fitting, a new valve and balancing.</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__visual">
+          <div class="about__img about__img--main media" data-parallax-wrap>
+            <img src="https://unsplash.com/photos/XqR-ZSvW6q4/download?force=true&amp;w=1200" data-fallback="https://unsplash.com/photos/9uHal2Dd9aE/download?force=true&amp;w=1200" alt="Workshop filled with tools and equipment" loading="lazy" decoding="async" data-parallax>
+          </div>
+          <div class="about__img about__img--inset media">
+            <img src="https://unsplash.com/photos/_CVx8Z4nypE/download?force=true&amp;w=700" data-fallback="https://unsplash.com/photos/lUzZ_0B4Gzs/download?force=true&amp;w=700" alt="Blue alloy wheel with orange brake caliper" loading="lazy" decoding="async">
+          </div>
+          <div class="spin-badge" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="badgeCircle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#badgeCircle">SINCE 2010 • TRUSTED BY 20,000+ DRIVERS • </textPath></text>
+            </svg>
+            <svg class="spin-badge__mark"><use href="#logo-mark"/></svg>
+          </div>
+          <div class="about__years glass">
+            <strong><span data-count="15">15</span>+</strong>
+            <span>years of keeping<br>drivers rolling</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Why Zama Zama</p>
+          <h2 class="section-title" data-split>Built on trust. <span class="text-grad">Measured in millimetres.</span></h2>
+          <p class="section-lead" data-reveal>What started as a two-bay tyre shop has grown into one of the region's most trusted tyre and wheel centres. Our promise hasn't changed since day one: honest advice, genuine tyres and workmanship we're proud to put our name on.</p>
+
+          <ul class="features">
+            <li data-reveal><span class="features__icon"><svg class="ic"><use href="#i-award"/></svg></span><div><h3>Certified technicians</h3><p>Factory-trained team with decades of combined experience.</p></div></li>
+            <li data-reveal><span class="features__icon"><svg class="ic"><use href="#i-shield"/></svg></span><div><h3>Genuine, fresh stock</h3><p>Every tyre is date-checked so you never get old rubber.</p></div></li>
+            <li data-reveal><span class="features__icon"><svg class="ic"><use href="#i-tag"/></svg></span><div><h3>Price-match promise</h3><p>Found it cheaper locally? We'll match it — no fuss.</p></div></li>
+            <li data-reveal><span class="features__icon"><svg class="ic"><use href="#i-wrench"/></svg></span><div><h3>Warranty on every job</h3><p>12-month workmanship warranty plus manufacturer cover.</p></div></li>
+            <li data-reveal><span class="features__icon"><svg class="ic"><use href="#i-coffee"/></svg></span><div><h3>Premium lounge</h3><p>Coffee, Wi-Fi and a comfy seat while you wait.</p></div></li>
+            <li data-reveal><span class="features__icon"><svg class="ic"><use href="#i-truck"/></svg></span><div><h3>Mobile rescue</h3><p>Flat on the road? Our service van comes to you.</p></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="counters">
+          <li data-reveal><strong><span data-count="20">20</span>K+</strong><span>Happy drivers</span></li>
+          <li data-reveal><strong><span data-count="12">12</span></strong><span>Premium brands</span></li>
+          <li data-reveal><strong><span data-count="6">6</span></strong><span>Service bays</span></li>
+          <li data-reveal><strong><span data-count="98">98</span>%</strong><span>Would recommend us</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement" aria-label="Our philosophy">
+      <div class="statement__media media">
+        <img src="https://unsplash.com/photos/HWZ7Psp0nCQ/download?force=true&amp;w=2000" data-fallback="https://unsplash.com/photos/sjvQSAYMcns/download?force=true&amp;w=2000" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="container">
+        <p class="statement__text">We don't just sell tyres. We engineer <span class="hl">confidence</span> — for every corner, every downpour and every <span class="hl">mile ahead.</span></p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Gallery</p>
+            <h2 class="section-title" data-split>Inside the workshop <span class="text-grad">&amp; on the road.</span></h2>
+          </div>
+          <p class="section-lead" data-reveal>A glimpse of the cars, wheels and finishes that roll out of our bays every week.</p>
+        </div>
+
+        <div class="bento">
+          <figure class="bento__item bento__item--a media" data-cursor="View">
+            <img src="https://unsplash.com/photos/0Ni9nVa5rPA/download?force=true&amp;w=1400" data-fallback="https://unsplash.com/photos/7L2-sf19x78/download?force=true&amp;w=1400" alt="Black supercar with orange brake calipers" loading="lazy" decoding="async">
+            <figcaption><span>Performance fitment</span>Supercar on 20" rims</figcaption>
+          </figure>
+          <figure class="bento__item media" data-cursor="View">
+            <img src="https://unsplash.com/photos/lUzZ_0B4Gzs/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/vmZuHxfbIlw/download?force=true&amp;w=800" alt="Golden alloy wheel with yellow brake caliper" loading="lazy" decoding="async">
+            <figcaption><span>Refurb</span>Custom gold finish</figcaption>
+          </figure>
+          <figure class="bento__item bento__item--tall media" data-cursor="View">
+            <img src="https://unsplash.com/photos/-PCCVqFedNg/download?force=true&amp;w=900" data-fallback="https://unsplash.com/photos/Km36esq8rY4/download?force=true&amp;w=900" alt="Off-road vehicle driving through deep mud" loading="lazy" decoding="async">
+            <figcaption><span>4x4</span>Mud-terrain package</figcaption>
+          </figure>
+          <figure class="bento__item media" data-cursor="View">
+            <img src="https://unsplash.com/photos/ISfRSbfqHBA/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/Wr1vbV1i-Qc/download?force=true&amp;w=800" alt="Black wheel with yellow brake caliper on a foggy wet road" loading="lazy" decoding="async">
+            <figcaption><span>Wheels</span>Wet-weather ready</figcaption>
+          </figure>
+          <figure class="bento__item bento__item--wide media" data-cursor="View">
+            <img src="https://unsplash.com/photos/zymgygh4qaY/download?force=true&amp;w=1400" data-fallback="https://unsplash.com/photos/ZNOLp1MFGKY/download?force=true&amp;w=1400" alt="Cars driving down a wet city road in the rain" loading="lazy" decoding="async">
+            <figcaption><span>On the road</span>Grip when it matters</figcaption>
+          </figure>
+          <figure class="bento__item media" data-cursor="View">
+            <img src="https://unsplash.com/photos/CsIcSVQlQmA/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/-PNudk9hxlE/download?force=true&amp;w=800" alt="Sleek black sports car in the dark" loading="lazy" decoding="async">
+            <figcaption><span>Detailing</span>Showroom finish</figcaption>
+          </figure>
+          <figure class="bento__item media" data-cursor="View">
+            <img src="https://unsplash.com/photos/sjvQSAYMcns/download?force=true&amp;w=800" data-fallback="https://unsplash.com/photos/HWZ7Psp0nCQ/download?force=true&amp;w=800" alt="Black sports car at night" loading="lazy" decoding="async">
+            <figcaption><span>Night drive</span>Low-profile setup</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Reviews</p>
+            <h2 class="section-title" data-split>Drivers who trust us <span class="text-grad">with their wheels.</span></h2>
+          </div>
+          <div class="score glass" data-reveal>
+            <strong>4.9</strong>
+            <div>
+              <span class="rating__stars rating__stars--lg" style="--r:4.9"></span>
+              <span>Average from 1,200+ reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider" data-cursor="Drag">
+        <div class="slider__track" tabindex="0" aria-label="Customer reviews">
+          <figure class="review">
+            <svg class="review__mark"><use href="#i-quote-mark"/></svg>
+            <span class="rating__stars" style="--r:5"></span>
+            <blockquote>“In and out in 35 minutes with four new tyres and an alignment. The steering wheel is finally straight and the car feels brand new.”</blockquote>
+            <figcaption><span class="avatar">AR</span><span><strong>Ahmed R.</strong><small>BMW 330i</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <svg class="review__mark"><use href="#i-quote-mark"/></svg>
+            <span class="rating__stars" style="--r:5"></span>
+            <blockquote>“They talked me out of the expensive option and recommended what I actually needed. Honest advice is rare — I'm a customer for life.”</blockquote>
+            <figcaption><span class="avatar avatar--2">SK</span><span><strong>Sara K.</strong><small>Toyota RAV4</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <svg class="review__mark"><use href="#i-quote-mark"/></svg>
+            <span class="rating__stars" style="--r:5"></span>
+            <blockquote>“My kerbed alloys came back looking better than factory. You genuinely cannot tell they were ever damaged.”</blockquote>
+            <figcaption><span class="avatar avatar--3">DM</span><span><strong>Daniel M.</strong><small>VW Golf GTI</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <svg class="review__mark"><use href="#i-quote-mark"/></svg>
+            <span class="rating__stars" style="--r:4.5"></span>
+            <blockquote>“Booked on WhatsApp in the morning, fitted by lunchtime. The lounge and coffee made the wait a pleasure.”</blockquote>
+            <figcaption><span class="avatar avatar--4">FZ</span><span><strong>Fatima Z.</strong><small>Honda Civic</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <svg class="review__mark"><use href="#i-quote-mark"/></svg>
+            <span class="rating__stars" style="--r:5"></span>
+            <blockquote>“Set my Hilux up with all-terrains for a desert trip. Zero issues over 2,000 km of rough tracks. These guys know off-road.”</blockquote>
+            <figcaption><span class="avatar avatar--5">OS</span><span><strong>Omar S.</strong><small>Toyota Hilux</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <svg class="review__mark"><use href="#i-quote-mark"/></svg>
+            <span class="rating__stars" style="--r:5"></span>
+            <blockquote>“Puncture on the motorway — their mobile van reached me in 40 minutes. Professional, friendly and fairly priced.”</blockquote>
+            <figcaption><span class="avatar avatar--6">LP</span><span><strong>Lisa P.</strong><small>Audi A4</small></span></figcaption>
+          </figure>
+        </div>
+        <div class="container slider__controls">
+          <div class="slider__progress" aria-hidden="true"><i></i></div>
+          <div class="slider__btns">
+            <button class="icon-btn icon-btn--round" type="button" data-slide="-1" aria-label="Previous review"><svg class="ic"><use href="#i-chevron-left"/></svg></button>
+            <button class="icon-btn icon-btn--round" type="button" data-slide="1" aria-label="Next review"><svg class="ic"><use href="#i-chevron-right"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section booking" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__info">
+          <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Book online</p>
+          <h2 class="section-title" data-split>Reserve your bay in <span class="text-grad">under a minute.</span></h2>
+          <p class="section-lead" data-reveal>Choose a service and a time that suits you. We'll confirm on WhatsApp and have everything ready when you arrive.</p>
+          <ul class="ticks" data-reveal>
+            <li><svg class="ic"><use href="#i-check"/></svg>Instant WhatsApp confirmation</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>No payment until the job is done</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Free tyre health check with every visit</li>
+          </ul>
+
+          <div class="hours glass" data-reveal>
+            <div class="hours__head">
+              <h3><svg class="ic"><use href="#i-clock"/></svg>Opening hours</h3>
+              <span class="status" data-open-status><i></i><span>Checking…</span></span>
+            </div>
+            <ul class="hours__list">
+              <li data-day="1"><span>Monday</span><span>8:00 – 20:00</span></li>
+              <li data-day="2"><span>Tuesday</span><span>8:00 – 20:00</span></li>
+              <li data-day="3"><span>Wednesday</span><span>8:00 – 20:00</span></li>
+              <li data-day="4"><span>Thursday</span><span>8:00 – 20:00</span></li>
+              <li data-day="5"><span>Friday</span><span>8:00 – 20:00</span></li>
+              <li data-day="6"><span>Saturday</span><span>8:00 – 20:00</span></li>
+              <li data-day="0"><span>Sunday</span><span>10:00 – 16:00</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="booking__card glass" data-reveal>
+          <form class="booking-form" id="bookingForm" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <input id="b-name" name="name" type="text" placeholder=" " autocomplete="name" required minlength="2">
+                <label for="b-name">Full name</label>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <input id="b-phone" name="phone" type="tel" placeholder=" " autocomplete="tel" required pattern="[0-9+()\-\s]{7,}">
+                <label for="b-phone">Phone / WhatsApp</label>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <input id="b-vehicle" name="vehicle" type="text" placeholder=" " required>
+                <label for="b-vehicle">Vehicle (make &amp; model)</label>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <input id="b-size" name="size" type="text" placeholder=" ">
+                <label for="b-size">Tyre size (optional)</label>
+              </div>
+            </div>
+            <div class="field-row">
+              <label class="select-field">
+                <span>Service</span>
+                <select id="b-service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option>Tyre supply &amp; fitting</option>
+                  <option>3D wheel alignment</option>
+                  <option>Wheel balancing</option>
+                  <option>Puncture repair</option>
+                  <option>Alloy wheel refurbishment</option>
+                  <option>4x4 &amp; off-road setup</option>
+                  <option>Free tyre health check</option>
+                </select>
+                <svg class="ic"><use href="#i-chevron-down"/></svg>
+                <span class="field__error" aria-live="polite"></span>
+              </label>
+              <label class="select-field">
+                <span>Date</span>
+                <input id="b-date" name="date" type="date" required>
+                <svg class="ic"><use href="#i-calendar"/></svg>
+                <span class="field__error" aria-live="polite"></span>
+              </label>
+            </div>
+
+            <fieldset class="slots">
+              <legend>Preferred time</legend>
+              <div class="slots__grid">
+                <label><input type="radio" name="time" value="09:00" required><span>09:00</span></label>
+                <label><input type="radio" name="time" value="10:30"><span>10:30</span></label>
+                <label><input type="radio" name="time" value="12:00"><span>12:00</span></label>
+                <label><input type="radio" name="time" value="13:30"><span>13:30</span></label>
+                <label><input type="radio" name="time" value="15:00"><span>15:00</span></label>
+                <label><input type="radio" name="time" value="16:30"><span>16:30</span></label>
+                <label><input type="radio" name="time" value="18:00"><span>18:00</span></label>
+                <label><input type="radio" name="time" value="19:00"><span>19:00</span></label>
+              </div>
+              <span class="field__error" aria-live="polite"></span>
+            </fieldset>
+
+            <div class="field">
+              <textarea id="b-notes" name="notes" rows="3" placeholder=" "></textarea>
+              <label for="b-notes">Anything we should know? (optional)</label>
+            </div>
+
+            <button class="btn btn--primary btn--block btn--lg" type="submit" data-magnetic>
+              <span class="btn__label" data-text="Confirm booking"><span>Confirm booking</span></span>
+              <span class="btn__icon"><svg class="ic"><use href="#i-arrow"/></svg></span>
+            </button>
+            <p class="form-foot">By booking you agree to be contacted about your appointment. We never share your details.</p>
+          </form>
+
+          <div class="booking-success" hidden tabindex="-1">
+            <svg class="booking-success__check" viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="40" r="36"/>
+              <path d="M25 41.5 35.5 52 56 30"/>
+            </svg>
+            <h3>You're booked in!</h3>
+            <p class="booking-success__summary"></p>
+            <a class="btn btn--whatsapp btn--block btn--lg booking-success__wa" href="#" target="_blank" rel="noopener">
+              <span class="btn__label" data-text="Confirm on WhatsApp"><span>Confirm on WhatsApp</span></span>
+              <span class="btn__icon"><svg class="ic"><use href="#i-whatsapp"/></svg></span>
+            </a>
+            <button class="link-arrow booking-success__again" type="button">Make another booking<svg class="ic"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div class="faq__intro">
+          <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>FAQ</p>
+          <h2 class="section-title" data-split>Questions? <span class="text-grad">Answered.</span></h2>
+          <p class="section-lead" data-reveal>Can't find what you're looking for? Our team is one message away.</p>
+          <a class="btn btn--ghost" href="#contact" data-reveal data-magnetic><span class="btn__label" data-text="Talk to an expert"><span>Talk to an expert</span></span><span class="btn__icon"><svg class="ic"><use href="#i-arrow"/></svg></span></a>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">How do I know which tyres fit my car?<span class="accordion__icon"></span></button></h3>
+            <div class="accordion__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn"><div><p>Your tyre size is printed on the sidewall (for example 225/45 R17) and usually on a sticker inside the driver's door or fuel flap. Not sure? Pop in and we'll check it for free in under two minutes.</p></div></div>
+          </div>
+          <div class="accordion__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">How long does fitting take?<span class="accordion__icon"></span></button></h3>
+            <div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn"><div><p>A set of four tyres is typically fitted and balanced in around 30 minutes. Add about 30 minutes if you're also having a 3D wheel alignment.</p></div></div>
+          </div>
+          <div class="accordion__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">Do I need an appointment?<span class="accordion__icon"></span></button></h3>
+            <div class="accordion__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn"><div><p>Walk-ins are always welcome, but booking online guarantees your bay and means your tyres are ready and waiting when you arrive.</p></div></div>
+          </div>
+          <div class="accordion__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">How often should I get a wheel alignment?<span class="accordion__icon"></span></button></h3>
+            <div class="accordion__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn"><div><p>We recommend a check every 10,000 km, whenever you fit new tyres, or straight after hitting a big pothole or kerb. If your car pulls to one side or the steering wheel is off-centre, it's time.</p></div></div>
+          </div>
+          <div class="accordion__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">When should I replace my tyres?<span class="accordion__icon"></span></button></h3>
+            <div class="accordion__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn"><div><p>Replace them when the tread drops below 3 mm for best wet grip, or sooner if you see cracks, bulges or uneven wear. Tyres older than about six years should be inspected even if the tread looks fine.</p></div></div>
+          </div>
+          <div class="accordion__item" data-reveal>
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">Do you offer a warranty?<span class="accordion__icon"></span></button></h3>
+            <div class="accordion__panel" id="faq-6" role="region" aria-labelledby="faq-6-btn"><div><p>Yes. Every job comes with a 12-month workmanship warranty, and all tyres carry the full manufacturer's warranty on top.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" aria-label="Book a fitting">
+      <div class="container">
+        <div class="cta__card">
+          <div class="cta__media media">
+            <img src="https://unsplash.com/photos/7L2-sf19x78/download?force=true&amp;w=1800" data-fallback="https://unsplash.com/photos/Y1wL87Fc4D4/download?force=true&amp;w=1800" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="cta__content">
+            <p class="eyebrow eyebrow--center"><span class="eyebrow__dot"></span>Ready when you are</p>
+            <h2 class="cta__title" data-split>Your next drive deserves <span class="text-grad">better grip.</span></h2>
+            <div class="cta__actions">
+              <a class="btn btn--primary btn--lg" href="#booking" data-magnetic><span class="btn__label" data-text="Book a fitting"><span>Book a fitting</span></span><span class="btn__icon"><svg class="ic"><use href="#i-arrow"/></svg></span></a>
+              <a class="btn btn--ghost btn--lg" href="tel:+15550123456" data-magnetic><span class="btn__label" data-text="Call the workshop"><span>Call the workshop</span></span><span class="btn__icon"><svg class="ic"><use href="#i-phone"/></svg></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal><span class="eyebrow__dot"></span>Contact</p>
+            <h2 class="section-title" data-split>Come and <span class="text-grad">say hello.</span></h2>
+          </div>
+          <p class="section-lead" data-reveal>Drop by the workshop, give us a call or send a WhatsApp — we usually reply within minutes.</p>
+        </div>
+
+        <div class="contact__grid">
+          <a class="contact-card" href="https://www.google.com/maps/search/?api=1&amp;query=Zama+Zama+Tyres" target="_blank" rel="noopener" data-reveal>
+            <span class="contact-card__icon"><svg class="ic"><use href="#i-pin"/></svg></span>
+            <span class="contact-card__label">Visit us</span>
+            <strong>Plot 24, Motorway Service Road</strong>
+            <span>Industrial Area</span>
+            <span class="contact-card__go"><svg class="ic"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
+          <a class="contact-card" href="tel:+15550123456" data-reveal>
+            <span class="contact-card__icon"><svg class="ic"><use href="#i-phone"/></svg></span>
+            <span class="contact-card__label">Call us</span>
+            <strong>+1 (555) 012-3456</strong>
+            <span>Mon–Sat 8:00–20:00</span>
+            <span class="contact-card__go"><svg class="ic"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
+          <a class="contact-card" href="#" data-whatsapp target="_blank" rel="noopener" data-reveal>
+            <span class="contact-card__icon contact-card__icon--wa"><svg class="ic"><use href="#i-whatsapp"/></svg></span>
+            <span class="contact-card__label">WhatsApp</span>
+            <strong>Chat with the team</strong>
+            <span>Average reply: 5 minutes</span>
+            <span class="contact-card__go"><svg class="ic"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
+          <a class="contact-card" href="mailto:hello@zamazamatyres.com" data-reveal>
+            <span class="contact-card__icon"><svg class="ic"><use href="#i-mail"/></svg></span>
+            <span class="contact-card__label">Email</span>
+            <strong>hello@zamazamatyres.com</strong>
+            <span>Fleet &amp; trade enquiries</span>
+            <span class="contact-card__go"><svg class="ic"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
+        </div>
+
+        <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Zama+Zama+Tyres" target="_blank" rel="noopener" data-reveal data-cursor="Open">
+          <svg class="map__art" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <pattern id="mapGrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" fill="none" stroke="rgba(255,255,255,.05)"/></pattern>
+            </defs>
+            <rect width="1200" height="420" fill="url(#mapGrid)"/>
+            <path class="map__road map__road--main" d="M-20 300 C 200 280, 360 180, 600 210 S 980 330, 1220 250"/>
+            <path class="map__road" d="M180 -20 C 220 120, 260 260, 230 440"/>
+            <path class="map__road" d="M820 -20 C 780 140, 860 280, 900 440"/>
+            <path class="map__road" d="M-20 110 C 300 140, 700 60, 1220 120"/>
+            <path class="map__route" d="M230 440 C 250 330, 420 220, 600 210"/>
+          </svg>
+          <span class="map__pin" aria-hidden="true"><i></i><svg><use href="#logo-mark"/></svg></span>
+          <span class="map__label glass"><strong>Zama Zama Tyres</strong><span>Get directions</span><svg class="ic"><use href="#i-arrow-up-right"/></svg></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="logo" href="#home" aria-label="Zama Zama Tyres — back to top">
+            <svg class="logo__mark"><use href="#logo-mark"/></svg>
+            <span class="logo__text"><strong>Zama Zama</strong><small>Tyres &amp; Wheels</small></span>
+          </a>
+          <p>Premium tyres, precision alignment and wheel care for drivers who refuse to compromise on safety.</p>
+          <ul class="socials">
+            <li><a href="#" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a></li>
+            <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-facebook"/></svg></a></li>
+            <li><a href="#" aria-label="TikTok"><svg class="ic"><use href="#i-tiktok"/></svg></a></li>
+            <li><a href="#" aria-label="YouTube"><svg class="ic"><use href="#i-youtube"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Tyre fitting</a></li>
+            <li><a href="#services">Wheel alignment</a></li>
+            <li><a href="#services">Balancing</a></li>
+            <li><a href="#services">Puncture repair</a></li>
+            <li><a href="#services">Alloy refurbishment</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#shop">Our tyres</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__news">
+          <h3>Seasonal offers</h3>
+          <p>One email a month. Exclusive tyre deals and maintenance tips.</p>
+          <form class="newsletter" novalidate>
+            <label class="sr-only" for="newsEmail">Email address</label>
+            <input id="newsEmail" type="email" placeholder="you@email.com" required autocomplete="email">
+            <button type="submit" aria-label="Subscribe"><svg class="ic"><use href="#i-arrow"/></svg></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__word" aria-hidden="true">
+        <span>Z</span><span>A</span><span>M</span><span>A</span><span class="gap"></span><span>Z</span><span>A</span><span>M</span><span>A</span>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Zama Zama Tyres. All rights reserved.</p>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#home" class="to-top-link">Back to top <svg class="ic"><use href="#i-arrow-up-right"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ QUOTE DRAWER ============ -->
+  <div class="drawer-overlay" hidden></div>
+  <aside class="drawer" id="quoteDrawer" aria-hidden="true" aria-labelledby="drawerTitle" role="dialog" aria-modal="true" data-lenis-prevent>
+    <div class="drawer__head">
+      <h2 id="drawerTitle">Your quote</h2>
+      <button class="icon-btn drawer__close" type="button" aria-label="Close quote"><svg class="ic"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="drawer__body">
+      <ul class="drawer__list"></ul>
+      <div class="drawer__empty">
+        <svg class="ic"><use href="#i-tyre"/></svg>
+        <p><strong>Your quote is empty</strong>Add tyres from the shop and we'll send you our best price.</p>
+        <a class="btn btn--ghost btn--sm" href="#shop" data-close-drawer><span class="btn__label" data-text="Browse tyres"><span>Browse tyres</span></span></a>
+      </div>
+    </div>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Estimated total</span><strong class="drawer__sum">$0</strong></div>
+      <p class="drawer__small">Includes fitting, valves &amp; balancing. Final price confirmed by our team.</p>
+      <a class="btn btn--whatsapp btn--block btn--lg drawer__send" href="#" target="_blank" rel="noopener">
+        <span class="btn__label" data-text="Request quote on WhatsApp"><span>Request quote on WhatsApp</span></span>
+        <span class="btn__icon"><svg class="ic"><use href="#i-whatsapp"/></svg></span>
+      </a>
+      <button class="drawer__clear" type="button">Clear all</button>
+    </div>
+  </aside>
+
+  <!-- ============ FLOATING ACTIONS ============ -->
+  <div class="fab">
+    <a class="fab__btn fab__top" href="#home" aria-label="Back to top">
+      <svg class="fab__ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/></svg>
+      <svg class="fab__icon"><use href="#i-arrow-up-right"/></svg>
+    </a>
+    <a class="fab__btn fab__wa" href="#" data-whatsapp target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg class="fab__icon"><use href="#i-whatsapp"/></svg>
+      <span class="fab__tip">Need help? Chat now</span>
+    </a>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"><svg class="ic"><use href="#i-check"/></svg><span></span></div>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/SplitText.min.js" defer></script>
+  <script src="assets/vendor/Flip.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
