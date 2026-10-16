@@ -1335,6 +1335,7 @@ select option { background: #141419; color: var(--text); }
   font-size: 14px; color: var(--muted);
 }
 .footer__bottom ul { display: flex; flex-wrap: wrap; gap: 24px; }
+.footer__credit strong { font-weight: 700; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .footer__bottom a { transition: color .3s; }
 .footer__bottom a:hover { color: var(--text); }
 .to-top-link { display: inline-flex; align-items: center; gap: 6px; }
