@@ -366,6 +366,22 @@ body::before {
 .nav a.is-active { color: var(--text); background: rgba(255, 255, 255, .11); }
 
 .header__actions { display: flex; align-items: center; gap: 10px; }
+.header__call { display: inline-flex; align-items: center; gap: 10px; margin-right: 6px; line-height: 1.15; }
+.header__call-icon {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255, 122, 31, .12); border: 1px solid rgba(255, 122, 31, .3); color: var(--accent-2);
+  transition: background-color .3s, color .3s;
+}
+.header__call-icon .ic { width: 17px; height: 17px; }
+.header__call small { display: block; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.header__call strong { font-size: 14.5px; font-variant-numeric: tabular-nums; }
+.header__call:hover .header__call-icon { background: var(--grad); color: var(--accent-ink); }
+.footer__contact { display: grid; gap: 16px; margin-top: 24px; }
+.footer__contact li { display: flex; gap: 12px; align-items: flex-start; }
+.footer__contact .ic { width: 18px; height: 18px; margin-top: 3px; color: var(--accent-2); }
+.footer__contact small { display: block; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.footer__contact a { font-weight: 600; color: var(--text-soft); line-height: 1.5; transition: color .3s; }
+.footer__contact a:hover { color: var(--accent-2); }
 .quote-count {
   position: absolute; top: -5px; right: -5px;
   min-width: 20px; height: 20px; padding: 0 5px;
@@ -1472,6 +1488,10 @@ select option { background: #141419; color: var(--text); }
   .contact__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
+@media (max-width: 1280px) {
+  .header__call small { display: none; }
+}
+
 @media (max-width: 1080px) {
   .nav { display: none; }
   .menu-toggle { display: grid; }
@@ -1521,6 +1541,10 @@ select option { background: #141419; color: var(--text); }
   .footer__top { grid-template-columns: 1fr; gap: 36px; }
   .section-head { align-items: flex-start; }
   .score { width: 100%; }
+}
+
+@media (max-width: 760px) {
+  .header__call { display: none; }
 }
 
 @media (max-width: 560px) {

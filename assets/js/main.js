@@ -10,9 +10,9 @@
   /* ---------- Business settings — edit these ---------- */
   const CONFIG = {
     businessName: 'Zama Zama Tyres',
-    whatsappNumber: '15550123456', // international format, digits only (no +, spaces or dashes)
+    whatsappNumber: '27718956445', // 071 895 6445 — international format, digits only (no +, spaces or dashes)
     currency: '$',
-    timeZone: null, // e.g. 'Asia/Karachi' or 'Africa/Johannesburg'; null = visitor's local time
+    timeZone: 'Africa/Johannesburg', // shop's time zone, so 'Open now' is right for every visitor
     // Opening hours per weekday (0 = Sunday … 6 = Saturday) as [open, close] in 24h hours, or null when closed.
     hours: { 0: [10, 16], 1: [8, 20], 2: [8, 20], 3: [8, 20], 4: [8, 20], 5: [8, 20], 6: [8, 20] },
     defaultQuoteQty: 4,

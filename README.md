@@ -36,7 +36,7 @@ Also: Lenis smooth scrolling, custom cursor and magnetic buttons on desktop, scr
 Everything below is sample content:
 
 1. **Business settings** — top of `assets/js/main.js` (`CONFIG`): WhatsApp number (digits only, with country code), currency symbol, opening hours, and optional `timeZone`.
-2. **Contact details** in `index.html`: phone `+1 (555) 012-3456` / `tel:+15550123456`, email `hello@zamazamatyres.com`, address `Plot 24, Motorway Service Road`, the Google Maps links, and the JSON-LD block in `<head>`.
+2. **Contact details** — phone `071 895 6445` and the Mitchell's Plain address are set. Still a placeholder: email `hello@zamazamatyres.com` in `index.html`.
 3. **Opening hours list** in the booking section (keep it in sync with `CONFIG.hours`).
 4. **Tyres & prices** — each `<article class="product">` in the shop: brand, model, `data-price`, `data-sizes`, ratings and spec bars.
 5. **Stats, reviews and the "4.9 from 1,200+ reviews" score** — replace with your real numbers and genuine customer reviews.
