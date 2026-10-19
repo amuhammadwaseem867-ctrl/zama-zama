@@ -1,9 +1,11 @@
-# Publishes the static site to GitHub Pages (zamazama.site) on every push to main.
+# Publishes the static site to GitHub Pages (zamazama.site).
+# GitHub Pages only accepts deploys from the repo's default branch, so the job
+# runs for whichever of these branches is currently the default.
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/practical-newton-aosb28]
   workflow_dispatch:
 
 permissions:
@@ -17,6 +19,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     environment:
       name: github-pages
