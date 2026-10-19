@@ -11,7 +11,6 @@
   const CONFIG = {
     businessName: 'Zama Zama Tyres',
     whatsappNumber: '27718956445', // 071 895 6445 — international format, digits only (no +, spaces or dashes)
-    currency: 'R', // South African Rand
     timeZone: 'Africa/Johannesburg', // shop's time zone, so 'Open now' is right for every visitor
     // Opening hours per weekday (0 = Sunday … 6 = Saturday) as [open, close] in 24h hours, or null when closed.
     hours: { 0: [10, 16], 1: [8, 20], 2: [8, 20], 3: [8, 20], 4: [8, 20], 5: [8, 20], 6: [8, 20] },
@@ -40,7 +39,6 @@
       try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* storage unavailable */ }
     },
   };
-  const money = (n) => CONFIG.currency + Math.round(n).toLocaleString('en-US');
   const waLink = (text) => `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
   const fmtHour = (h) => `${Math.floor(h)}:${String(Math.round((h % 1) * 60)).padStart(2, '0')}`;
   const imgReady = (img) => new Promise((resolve) => {
@@ -833,16 +831,14 @@
   });
 
   function quoteMessage() {
-    const lines = quote.map((q) => `• ${q.qty} × ${q.brand} ${q.name} (${q.size}) — ${money(q.qty * q.price)}`);
-    const total = quote.reduce((s, q) => s + q.qty * q.price, 0);
-    return `Hello ${CONFIG.businessName}! I'd like a quote for:\n${lines.join('\n')}\n\nEstimated total: ${money(total)}\nPlease confirm availability and fitting times. Thank you!`;
+    const lines = quote.map((q) => `• ${q.qty} × ${q.brand} ${q.name} (${q.size})`);
+    return `Hello ${CONFIG.businessName}! Please send me a price for:\n${lines.join('\n')}\n\nPlease confirm availability and fitting times. Thank you!`;
   }
 
   function renderQuote(bump) {
     store.set('zz-quote', quote);
     const list = $('.drawer__list');
     const totalQty = quote.reduce((s, q) => s + q.qty, 0);
-    const total = quote.reduce((s, q) => s + q.qty * q.price, 0);
 
     if (quoteCount) {
       quoteCount.textContent = totalQty;
@@ -863,8 +859,7 @@
         <div class="drawer__info">
           <small>${q.brand}</small>
           <strong>${q.name}</strong>
-          <small>${q.size} · ${money(q.price)} each</small>
-          <span class="drawer__line">${money(q.qty * q.price)}</span>
+          <small>${q.size}</small>
         </div>
         <div class="drawer__side">
           <div class="qty">
@@ -884,7 +879,6 @@
       $('.drawer__remove', li).addEventListener('click', () => { quote.splice(i, 1); renderQuote(); });
       list.appendChild(li);
     });
-    $('.drawer__sum').textContent = money(total);
     const send = $('.drawer__send');
     if (send) send.href = waLink(quoteMessage());
   }
@@ -928,7 +922,6 @@
         brand: card.dataset.brand,
         name: card.dataset.name,
         size,
-        price: Number(card.dataset.price),
         qty: CONFIG.defaultQuoteQty,
         img: img ? img.currentSrc || img.src : '',
       });

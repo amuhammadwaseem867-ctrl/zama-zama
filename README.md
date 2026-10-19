@@ -38,7 +38,7 @@ Everything below is sample content:
 1. **Business settings** — top of `assets/js/main.js` (`CONFIG`): WhatsApp number (digits only, with country code), currency symbol, opening hours, and optional `timeZone`.
 2. **Contact details** — phone `071 895 6445` and the Mitchell's Plain address are set (no email by choice).
 3. **Opening hours list** in the booking section (keep it in sync with `CONFIG.hours`).
-4. **Tyres & prices (in Rand)** — each `<article class="product">` in the shop: brand, model, `data-price`, `data-sizes`, ratings and spec bars.
+4. **Tyres** — each `<article class="product">` in the shop: brand, model, `data-sizes`, ratings and spec bars. No prices are shown; customers ask for a price on WhatsApp.
 5. **Stats, reviews and the "4.9 from 1,200+ reviews" score** — replace with your real numbers and genuine customer reviews.
 6. **Social links** in the footer (currently `#`).
 
