@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amuhammadwaseem867-ctrl.github.io/zama-zama/sitemap.xml
+Sitemap: https://zamazama.site/sitemap.xml

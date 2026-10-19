@@ -10,7 +10,7 @@ Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
-To publish free on **GitHub Pages**: repo → Settings → Pages → Deploy from branch → pick this branch and `/ (root)`.
+**Live site:** https://zamazama.site — hosted on Netlify, which redeploys automatically on every push to the production branch.
 
 ## What's inside
 
