@@ -10,7 +10,7 @@ Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
-**Live site:** https://zamazama.site — hosted on Netlify, which redeploys automatically on every push to the production branch.
+**Live site:** https://zamazama.site — hosted free on GitHub Pages from the `main` branch (the `CNAME` file sets the domain). Every push to `main` goes live in about a minute.
 
 ## What's inside
 
