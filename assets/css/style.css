@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Zama Zama Tyres — premium tyre & wheel centre
+   Zama Zama Autofitment — premium tyre & wheel centre
    ========================================================================== */
 
 /* ---------- Design tokens ---------- */
@@ -33,6 +33,8 @@
 
   --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
   --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-brand: "Anton", "Impact", "Arial Narrow", sans-serif;
+  --font-brand-sub: "Oswald", "Arial Narrow", sans-serif;
 
   --ease-out: cubic-bezier(.16, 1, .3, 1);
   --ease-in-out: cubic-bezier(.65, 0, .35, 1);
@@ -284,12 +286,14 @@ body::before {
   background: var(--bg);
 }
 .preloader__inner { display: flex; flex-direction: column; align-items: center; gap: 22px; }
-.preloader__mark { width: 70px; height: 70px; color: var(--text); animation: spin 1.4s linear infinite; }
+.preloader__mark { width: 84px; height: 96px; animation: markPulse 1.6s var(--ease-in-out) infinite; }
+@keyframes markPulse { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(242, 107, 29, 0)); } 50% { transform: scale(1.06); filter: drop-shadow(0 0 24px rgba(242, 107, 29, .55)); } }
 .preloader__word {
   display: flex; overflow: hidden;
-  font-family: var(--font-display); font-weight: 800;
-  font-size: clamp(30px, 6vw, 60px); line-height: 1.1; letter-spacing: -.02em;
+  font-family: var(--font-brand); font-weight: 400;
+  font-size: clamp(40px, 7vw, 72px); line-height: 1.1; letter-spacing: .01em;
 }
+.preloader__sub { margin-top: -14px; font-family: var(--font-brand-sub); font-weight: 600; font-size: clamp(13px, 1.6vw, 17px); letter-spacing: .62em; padding-left: .62em; text-transform: uppercase; color: #f26b1d; }
 .preloader__word span { display: inline-block; }
 .preloader__word .gap, .footer__word .gap { width: .32em; flex-shrink: 0; }
 .preloader__bar { width: min(260px, 60vw); height: 2px; background: var(--line); overflow: hidden; border-radius: 2px; }
@@ -334,17 +338,17 @@ body::before {
 .header__inner { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 
 .logo { display: inline-flex; align-items: center; gap: 12px; }
-.logo__mark { width: 42px; height: 42px; color: var(--text); transition: transform 1.2s var(--ease-out); }
-.logo:hover .logo__mark { transform: rotate(180deg); }
+.logo__mark { width: 40px; height: 46px; transition: transform .8s var(--ease-out), filter .8s; }
+.logo:hover .logo__mark { transform: scale(1.08); filter: drop-shadow(0 0 14px rgba(242, 107, 29, .6)); }
 .logo__text strong {
   display: block;
-  font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1;
+  font-family: var(--font-brand); font-weight: 400; font-size: 24px; line-height: .95;
   letter-spacing: .02em; text-transform: uppercase;
 }
 .logo__text small {
-  display: block; margin-top: 6px;
-  font-size: 9.5px; font-weight: 700; letter-spacing: .34em; text-transform: uppercase;
-  color: var(--muted);
+  display: block; margin-top: 4px;
+  font-family: var(--font-brand-sub); font-size: 10.5px; font-weight: 600; letter-spacing: .46em; text-transform: uppercase;
+  color: #f26b1d;
 }
 
 .nav ul {
@@ -907,7 +911,7 @@ select option { background: #141419; color: var(--text); }
 }
 .spin-badge > svg:first-child { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 20s linear infinite; }
 .spin-badge text { font-family: var(--font-display); font-weight: 600; font-size: 12.5px; letter-spacing: .14em; fill: var(--text); }
-.spin-badge__mark { width: 40%; height: 40%; color: var(--text); }
+.spin-badge__mark { width: 42%; height: 46%; }
 .about__years {
   position: absolute; left: -22px; bottom: 22%;
   display: flex; align-items: center; gap: 14px;
@@ -1266,7 +1270,7 @@ select option { background: #141419; color: var(--text); }
   background: var(--bg); border: 2px solid var(--accent);
   box-shadow: 0 0 40px rgba(255, 106, 31, .6);
 }
-.map__pin svg { width: 38px; height: 38px; color: var(--text); }
+.map__pin svg { width: 36px; height: 40px; }
 .map__pin i { position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--accent); animation: ripple 2.4s var(--ease-out) infinite; }
 @keyframes ripple { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(2.2); opacity: 0; } }
 .map__label {
@@ -1316,8 +1320,8 @@ select option { background: #141419; color: var(--text); }
 .footer__word {
   display: flex; justify-content: center;
   margin-top: clamp(56px, 8vw, 100px);
-  font-family: var(--font-display); font-weight: 800;
-  font-size: min(10.6vw, 152px); line-height: .82; letter-spacing: -.045em;
+  font-family: var(--font-brand); font-weight: 400;
+  font-size: min(17vw, 250px); line-height: .9; letter-spacing: .01em;
   user-select: none;
 }
 .footer__word span {

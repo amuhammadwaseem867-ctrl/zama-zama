@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Zama Zama Tyres — interactions & motion
+   Zama Zama Autofitment — interactions & motion
    GSAP + ScrollTrigger + SplitText + Flip, Lenis smooth scrolling.
    Everything degrades gracefully: without these libraries (or with
    "reduce motion" switched on) the page is fully usable and static.
@@ -9,7 +9,7 @@
 
   /* ---------- Business settings — edit these ---------- */
   const CONFIG = {
-    businessName: 'Zama Zama Tyres',
+    businessName: 'Zama Zama Autofitment',
     whatsappNumber: '27718956445', // 071 895 6445 — international format, digits only (no +, spaces or dashes)
     timeZone: 'Africa/Johannesburg', // shop's time zone, so 'Open now' is right for every visitor
     // Opening hours per weekday (0 = Sunday … 6 = Saturday) as [open, close] in 24h hours, or null when closed.
@@ -152,7 +152,7 @@
         <g fill="#050506">${grooves}</g>
         <circle r="281" fill="none" stroke="rgba(255,255,255,.05)"/>
         <circle r="214" fill="none" stroke="rgba(255,255,255,.05)"/>
-        <text class="tyre__text"><textPath href="#${id('arc')}" textLength="1500" lengthAdjust="spacing">ZAMA ZAMA • ULTRA HIGH PERFORMANCE • <tspan class="tyre__size">${size} 94W</tspan> • TUBELESS RADIAL • GRIP ENGINEERED •</textPath></text>
+        <text class="tyre__text"><textPath href="#${id('arc')}" textLength="1500" lengthAdjust="spacing">ZAMA ZAMA AUTOFITMENT • ULTRA HIGH PERFORMANCE • <tspan class="tyre__size">${size} 94W</tspan> • TUBELESS RADIAL • GRIP ENGINEERED •</textPath></text>
       </g>
 
       <circle r="209" fill="url(#${id('metal')})"/>

@@ -1,4 +1,4 @@
-# Zama Zama Tyres — website
+# Zama Zama Autofitment — website
 
 A premium, animated one-page website for a tyre & wheel centre. Plain HTML/CSS/JS — no build step.
 
