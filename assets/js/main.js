@@ -1,13 +1,11 @@
-/* ==========================================================================
-   Zama Zama Autofitment — interactions & motion
+/* Zama Zama Autofitment, interactions & motion
    GSAP + ScrollTrigger + SplitText + Flip, Lenis smooth scrolling.
    Everything degrades gracefully: without these libraries (or with
-   "reduce motion" switched on) the page is fully usable and static.
-   ========================================================================== */
+   "reduce motion" switched on) the page is fully usable and static. */
 (() => {
   'use strict';
 
-  /* ---------- Business settings — edit these ---------- */
+  /* Business settings — edit these */
   const CONFIG = {
     businessName: 'Zama Zama Autofitment',
     whatsappNumber: '27718956445', // 071 895 6445 — international format, digits only (no +, spaces or dashes)
@@ -17,7 +15,7 @@
     defaultQuoteQty: 4,
   };
 
-  /* ---------- Helpers ---------- */
+  /* Helpers */
   const root = document.documentElement;
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
@@ -51,7 +49,7 @@
   $$('img').forEach((img) => { if (img.complete && img.naturalWidth) img.classList.add('is-loaded'); });
   $$('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
 
-  /* ---------- Toast ---------- */
+  /* Toast */
   const toastEl = $('.toast');
   let toastTimer;
   function toast(message) {
@@ -62,9 +60,7 @@
     toastTimer = setTimeout(() => toastEl.classList.remove('is-visible'), 3200);
   }
 
-  /* ==========================================================================
-     Smooth scroll
-     ========================================================================== */
+  /* Smooth scroll */
   let lenis = null;
   if (canAnimate && Lenis) {
     lenis = new Lenis({ duration: 1.15, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
@@ -88,9 +84,7 @@
   let nativeVelocity = 0;
   const scrollVelocity = () => (lenis ? lenis.velocity : nativeVelocity);
 
-  /* ==========================================================================
-     SVG tyre (drawn in code so it can spin and show a live size)
-     ========================================================================== */
+  /* SVG tyre (drawn in code so it can spin and show a live size) */
   const polar = (r, deg) => {
     const a = (deg * Math.PI) / 180;
     return `${(r * Math.sin(a)).toFixed(2)},${(-r * Math.cos(a)).toFixed(2)}`;
@@ -196,9 +190,7 @@
   const heroTyre = buildTyre($('#heroTyre'), 'ht', '225/45 R17');
   const finderTyre = buildTyre($('#finderTyre'), 'ft', '225/45 R17');
 
-  /* ==========================================================================
-     Preloader + hero intro
-     ========================================================================== */
+  /* Preloader + hero intro */
   const preloader = $('.preloader');
   const heroRoll = { x: 0, offset: 0 };
 
@@ -279,7 +271,7 @@
     }
   }
 
-  /* ---------- Hero tyre spin: idle rotation + scroll velocity ---------- */
+  /* Hero tyre spin: idle rotation + scroll velocity */
   function initTyreSpin() {
     if (!canAnimate) {
       heroTyre && heroTyre.setAngle(18);
@@ -308,9 +300,7 @@
     });
   }
 
-  /* ==========================================================================
-     Header, menu, progress, nav state
-     ========================================================================== */
+  /* Header, menu, progress, nav state */
   const header = $('.header');
   const progressBar = $('.scroll-progress');
   const fabTop = $('.fab__top');
@@ -395,9 +385,7 @@
     if (drawer && drawer.classList.contains('is-open')) setDrawer(false);
   });
 
-  /* ==========================================================================
-     Scroll-driven animation
-     ========================================================================== */
+  /* Scroll-driven animation */
   function initReveals() {
     const els = $$('[data-reveal], .bento__item');
     if (!canAnimate || !('IntersectionObserver' in window)) {
@@ -544,7 +532,7 @@
     });
   }
 
-  /* ---------- Marquee speed follows scroll velocity ---------- */
+  /* Marquee speed follows scroll velocity */
   function initBands() {
     if (!canAnimate) return;
     const anims = $$('.band__track')
@@ -561,7 +549,7 @@
     });
   }
 
-  /* ---------- Counters ---------- */
+  /* Counters */
   function countUp(el, instant) {
     if (el.dataset.counted) return;
     el.dataset.counted = '1';
@@ -589,9 +577,7 @@
     els.forEach((el) => io.observe(el));
   }
 
-  /* ==========================================================================
-     Tyre finder
-     ========================================================================== */
+  /* Tyre finder */
   const finderForm = $('#finderForm');
   const sizeSelects = {
     width: $('[data-size="width"]'),
@@ -697,9 +683,7 @@
     scrollToTarget($('#shop'));
   });
 
-  /* ==========================================================================
-     Shop: filters (with Flip), size selects, quote
-     ========================================================================== */
+  /* Shop: filters (with Flip), size selects, quote */
   const products = $$('.product');
   const shop = { cat: 'all', size: null };
   const sizesOf = (card) => card.dataset.sizes.split(',').map((s) => s.trim());
@@ -787,7 +771,7 @@
     }
   }
 
-  /* ---------- Quote drawer ---------- */
+  /* Quote drawer */
   const drawer = $('#quoteDrawer');
   const overlay = $('.drawer-overlay');
   const quoteToggle = $('.quote-toggle');
@@ -941,9 +925,7 @@
   $$('.product__media').forEach((m) => m.addEventListener('click', () => $('.add-to-quote', m.closest('.product')).click()));
   renderQuote();
 
-  /* ==========================================================================
-     Opening hours + booking form
-     ========================================================================== */
+  /* Opening hours + booking form */
   function shopClock() {
     const now = new Date();
     if (!CONFIG.timeZone) return { day: now.getDay(), hour: now.getHours() + now.getMinutes() / 60, date: now };
@@ -1093,12 +1075,10 @@
     });
   }
 
-  /* ---------- WhatsApp links ---------- */
+  /* WhatsApp links */
   $$('[data-whatsapp]').forEach((a) => { a.href = waLink(`Hi ${CONFIG.businessName}! I have a question about tyres.`); });
 
-  /* ==========================================================================
-     FAQ accordion
-     ========================================================================== */
+  /* FAQ accordion */
   $$('.accordion__item button').forEach((btn) => {
     btn.addEventListener('click', () => {
       const open = btn.getAttribute('aria-expanded') !== 'true';
@@ -1112,9 +1092,7 @@
     });
   });
 
-  /* ==========================================================================
-     Reviews slider (native scroll-snap + buttons + mouse drag)
-     ========================================================================== */
+  /* Reviews slider (native scroll-snap + buttons + mouse drag) */
   const track = $('.slider__track');
   if (track) {
     const bar = $('.slider__progress');
@@ -1163,9 +1141,7 @@
     });
   }
 
-  /* ==========================================================================
-     Pointer effects: custom cursor, magnetic buttons, card spotlight
-     ========================================================================== */
+  /* Pointer effects: custom cursor, magnetic buttons, card spotlight */
   function initPointer() {
     if (!finePointer || !canAnimate) return;
     root.classList.add('has-cursor');
@@ -1216,9 +1192,7 @@
     });
   });
 
-  /* ==========================================================================
-     Boot
-     ========================================================================== */
+  /* Boot */
   root.classList.add('is-ready');
   initReveals();
   initCounters();
