@@ -1,8 +1,6 @@
-/* ==========================================================================
-   Zama Zama Autofitment — premium tyre & wheel centre
-   ========================================================================== */
+/* Zama Zama Autofitment, premium tyre & wheel centre */
 
-/* ---------- Design tokens ---------- */
+/* Design tokens */
 :root {
   --bg: #08080a;
   --bg-soft: #0d0d10;
@@ -42,7 +40,7 @@
   color-scheme: dark;
 }
 
-/* ---------- Reset ---------- */
+/* Reset */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 12px); }
 html:not(.lenis) { scroll-behavior: smooth; }
@@ -80,7 +78,7 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* ---------- Utilities ---------- */
+/* Utilities */
 .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 .sr-only {
   position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -111,7 +109,7 @@ body::before {
   box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .65), inset 0 1px 0 rgba(255, 255, 255, .06);
 }
 
-/* ---------- Typography ---------- */
+/* Typography */
 .eyebrow {
   display: inline-flex; align-items: center; gap: 12px;
   margin-bottom: 22px;
@@ -146,7 +144,7 @@ body::before {
 .section-lead strong { color: var(--text); }
 .section-title + .section-lead { margin-top: 24px; }
 
-/* ---------- Buttons ---------- */
+/* Buttons */
 .btn {
   position: relative; isolation: isolate; overflow: hidden;
   display: inline-flex; align-items: center; justify-content: center; gap: 14px;
@@ -242,7 +240,7 @@ body::before {
   border: 1px solid rgba(255, 122, 31, .25);
 }
 
-/* ---------- Media + image fallbacks ---------- */
+/* Media + image fallbacks */
 .media {
   position: relative;
   overflow: hidden;
@@ -276,9 +274,7 @@ body::before {
 }
 @keyframes shimmer { to { background-position: -220% 0; } }
 
-/* ==========================================================================
-   Preloader, progress, cursor
-   ========================================================================== */
+/* Preloader, progress, cursor */
 .preloader { display: none; }
 .js .preloader {
   position: fixed; inset: 0; z-index: 500;
@@ -320,9 +316,7 @@ body::before {
 .cursor.is-label .cursor__label { opacity: 1; }
 .cursor.is-label .cursor__dot, .cursor.is-hidden .cursor__dot, .cursor.is-hidden .cursor__ring { opacity: 0; }
 
-/* ==========================================================================
-   Header + mobile menu
-   ========================================================================== */
+/* Header + mobile menu */
 .header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   border-bottom: 1px solid transparent;
@@ -448,9 +442,7 @@ body::before {
 .mobile-menu__foot { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }
 .mobile-menu__phone { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text-soft); }
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
+/* Hero */
 .hero {
   position: relative; isolation: isolate;
   min-height: 100vh; min-height: 100svh;
@@ -575,9 +567,7 @@ body::before {
 .js [data-hero] { opacity: 0; }
 .js [data-split] { opacity: 0; }
 
-/* ==========================================================================
-   Crossing bands (marquee)
-   ========================================================================== */
+/* Crossing bands (marquee) */
 .bands { position: relative; padding-block: 64px 72px; overflow: hidden; }
 .band { position: relative; width: 112%; margin-left: -6%; padding-block: 18px; }
 .band--accent {
@@ -607,9 +597,7 @@ body::before {
 .band .is-outline { color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, .45); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
-/* ==========================================================================
-   Tyre finder
-   ========================================================================== */
+/* Tyre finder */
 .finder__grid {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: clamp(40px, 6vw, 96px); align-items: center;
@@ -702,9 +690,7 @@ select option { background: #141419; color: var(--text); }
 .finder__hint { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13.5px; color: var(--muted); }
 .finder__hint .ic { width: 16px; height: 16px; color: var(--success); }
 
-/* ==========================================================================
-   Services
-   ========================================================================== */
+/* Services */
 .services__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .service-card {
   position: relative; isolation: isolate;
@@ -741,9 +727,7 @@ select option { background: #141419; color: var(--text); }
 }
 .extras .ic { width: 16px; height: 16px; color: var(--accent); stroke-width: 2.4; }
 
-/* ==========================================================================
-   Process (horizontal scroll)
-   ========================================================================== */
+/* Process (horizontal scroll) */
 .process { position: relative; padding-top: clamp(40px, 6vw, 80px); }
 .process__pin {
   display: flex; flex-direction: column; justify-content: center; gap: clamp(32px, 4vw, 52px);
@@ -783,9 +767,7 @@ select option { background: #141419; color: var(--text); }
 .step__media { position: relative; height: 100%; }
 .step__media img { position: absolute; top: 0; left: -10%; width: 120%; max-width: none; height: 100%; }
 
-/* ==========================================================================
-   Shop
-   ========================================================================== */
+/* Shop */
 .filters { display: flex; flex-wrap: wrap; gap: 10px; }
 .chip {
   height: 44px; padding: 0 20px;
@@ -883,9 +865,7 @@ select option { background: #141419; color: var(--text); }
 .shop__note { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 36px; color: var(--muted); font-size: 14px; }
 .shop__note .ic { color: var(--accent); width: 18px; height: 18px; }
 
-/* ==========================================================================
-   About
-   ========================================================================== */
+/* About */
 .about__grid {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
   gap: clamp(56px, 7vw, 110px); align-items: center;
@@ -951,9 +931,7 @@ select option { background: #141419; color: var(--text); }
 .counters li:nth-child(odd) strong { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .counters li > span { display: block; margin-top: 12px; color: var(--muted); font-size: 15px; }
 
-/* ==========================================================================
-   Statement
-   ========================================================================== */
+/* Statement */
 .statement { position: relative; isolation: isolate; padding-block: clamp(120px, 18vw, 240px); overflow: hidden; }
 .statement__media { position: absolute; inset: -12% 0; z-index: -2; }
 .statement__media img, .js .statement__media img.is-loaded { opacity: .3; }
@@ -969,9 +947,7 @@ select option { background: #141419; color: var(--text); }
 .statement__text .hl,
 .statement__text .word--hl { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
-/* ==========================================================================
-   Gallery (bento)
-   ========================================================================== */
+/* Gallery (bento) */
 .bento {
   display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-rows: clamp(170px, 19vw, 280px);
@@ -998,9 +974,7 @@ select option { background: #141419; color: var(--text); }
 .bento__item:hover figcaption { opacity: 1; transform: none; }
 @media (hover: none) { .bento__item figcaption { opacity: 1; transform: none; } }
 
-/* ==========================================================================
-   Reviews
-   ========================================================================== */
+/* Reviews */
 .score { display: flex; align-items: center; gap: 18px; padding: 18px 24px; border-radius: 22px; }
 .score strong { font-family: var(--font-display); font-size: 52px; font-weight: 700; line-height: 1; letter-spacing: -.04em; }
 .score div { display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; color: var(--muted); }
@@ -1051,9 +1025,7 @@ select option { background: #141419; color: var(--text); }
 .slider__progress i { display: block; height: 100%; background: var(--grad); transform-origin: left; transform: scaleX(var(--p, .2)); transition: transform .3s; }
 .slider__btns { display: flex; gap: 10px; }
 
-/* ==========================================================================
-   Booking
-   ========================================================================== */
+/* Booking */
 .booking::before {
   content: ""; position: absolute; inset: 10% 0 auto auto; z-index: -1;
   width: 60vw; max-width: 800px; aspect-ratio: 1;
@@ -1153,9 +1125,7 @@ select option { background: #141419; color: var(--text); }
 .booking-success__again { margin-top: 6px; }
 @keyframes draw { to { stroke-dashoffset: 0; } }
 
-/* ==========================================================================
-   FAQ
-   ========================================================================== */
+/* FAQ */
 .faq__grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(40px, 6vw, 96px); align-items: start; }
 .faq__intro { position: sticky; top: calc(var(--header-h) + 40px); }
 .faq__intro .btn { margin-top: 32px; }
@@ -1188,9 +1158,7 @@ select option { background: #141419; color: var(--text); }
 .accordion__panel.is-open { grid-template-rows: 1fr; }
 .accordion__panel p { max-width: 62ch; padding-bottom: 26px; padding-right: 56px; color: var(--text-soft); }
 
-/* ==========================================================================
-   CTA
-   ========================================================================== */
+/* CTA */
 .cta { padding-bottom: clamp(84px, 10vw, 140px); }
 .cta__card {
   position: relative; isolation: isolate; overflow: hidden;
@@ -1214,9 +1182,7 @@ select option { background: #141419; color: var(--text); }
 }
 .cta__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
 
-/* ==========================================================================
-   Contact
-   ========================================================================== */
+/* Contact */
 .contact__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 16px; }
 .contact-card {
   position: relative;
@@ -1286,9 +1252,7 @@ select option { background: #141419; color: var(--text); }
 .map__label .ic { width: 16px; height: 16px; color: var(--accent-2); }
 .map:hover .map__label { transform: translateX(-50%) translateY(-4px); }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+/* Footer */
 .footer {
   position: relative; overflow: hidden;
   padding-top: clamp(64px, 8vw, 110px);
@@ -1343,9 +1307,7 @@ select option { background: #141419; color: var(--text); }
 .to-top-link { display: inline-flex; align-items: center; gap: 6px; }
 .to-top-link .ic { width: 15px; height: 15px; transform: rotate(-45deg); }
 
-/* ==========================================================================
-   Quote drawer, FAB, toast
-   ========================================================================== */
+/* Quote drawer, FAB, toast */
 .drawer-overlay {
   position: fixed; inset: 0; z-index: 110;
   background: rgba(0, 0, 0, .6);
@@ -1441,9 +1403,7 @@ select option { background: #141419; color: var(--text); }
 .toast.is-visible { transform: translate(-50%, 0); }
 .toast .ic { width: 24px; height: 24px; padding: 4px; border-radius: 50%; background: var(--success); color: #04200f; stroke-width: 3; }
 
-/* ==========================================================================
-   Scroll reveals (CSS-driven, triggered by IntersectionObserver)
-   ========================================================================== */
+/* Scroll reveals (CSS-driven, triggered by IntersectionObserver) */
 .js [data-reveal] { opacity: 0; }
 .js [data-reveal].is-in { animation: reveal 1.2s var(--ease-out) var(--d, 0s) both; }
 @keyframes reveal { from { opacity: 0; translate: 0 44px; } to { opacity: 1; translate: none; } }
@@ -1469,9 +1429,7 @@ select option { background: #141419; color: var(--text); }
   .band__track { animation: none; }
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
+/* Responsive */
 @media (max-width: 1200px) {
   .products { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer__top { grid-template-columns: 1fr 1fr; }
